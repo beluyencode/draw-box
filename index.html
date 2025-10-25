@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <div class="content">
+        <img id="step-1" src="./public/mapled luckydraw_1.png" alt="">
+        <img id="step-2" src="./public/mapled luckydraw_3.png" alt="">
+        <img id="step-3" src="./public/mapled luckydraw_4.jpg" alt="">
+        <div id="result" class="box-wrap hidden">
+            <div id="d1" class="box">0</div>
+            <div id="d2" class="box">0</div>
+            <div id="d3" class="box">0</div>
+        </div>
+    </div>
+    <script>
+        (function () {
+            // target = 26/10/2025 23:00:00 (giờ máy người dùng)
+            const target = new Date(2025, 9, 26, 11, 0, 0); // tháng = 9 vì JS tính từ 0 (0=Jan)
+
+            const now = new Date();
+            if (now > target) {
+                document.body.innerHTML = '';
+                // hoặc document.body.remove(); nếu muốn xoá body luôn
+            }
+        })();
+    </script>
+    <script src="index.js">
+    </script>
+</body>
+
+</html>
