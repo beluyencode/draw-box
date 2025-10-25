@@ -55,6 +55,7 @@ window.addEventListener("keydown", (e) => {
                 return;
             }
             updateSteps();
+            document.getElementById("result").classList.add("hidden");
             break;
         case "ArrowRight":
             // Right pressed
